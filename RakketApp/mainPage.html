@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="nav-bar">
+        <img src="img-resource/Raket.png" id="logo" >
+        <div class="separator">
+            <h4 id="login-btn" onclick="comfirmLogOut()">Logout</h4>
+            <span></span>
+            <img src="img-resource/menu.png" id="menu_icon" onclick="">
+        </div>
+
+    </div>
+  <div class="login-choice">
+    <div  id="login-choice">
+        <input type="submit" id="btn_1"  value="Search Job">
+
+    </div>    
+</div>
+<script>
+
+    function comfirmLogOut(){
+        let x = confirm("Are you sure you want to log out?");
+        if(x == true){
+            logOut();
+        }
+    }
+function logOut(){
+    window.location.href = "index.html";
+}
+</script>
+</body>
+</html>
